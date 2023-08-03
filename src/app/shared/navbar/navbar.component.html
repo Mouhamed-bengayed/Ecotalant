@@ -2,7 +2,7 @@
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
       <!-- <img src="./assets/img/brand/argon-white.png"> -->
-      <p>CO2</p>
+     <p>logo</p>
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
@@ -29,7 +29,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text">Components</span>
+            <span class="nav-link-inner--text text-white">Components</span>
           </a>
           <div class="dropdown-menu-xl dropdown-menu" >
             <div class="dropdown-menu-inner">
@@ -101,31 +101,38 @@
             <span class="nav-link-inner--text d-lg-none">Github</span>
           </a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Examples</span>
+       
+
+        <!-- <li >
+          <a   class="btn btn-neutral btn-icon">
+            <button href="./shared/signup">S'inscrire </button>
           </a>
-          <div class="dropdown-menu">
-            <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
-            <a [routerLink]="['/login']" class="dropdown-item">Login</a>
-            <a [routerLink]="['/register']" class="dropdown-item">Register</a>
-          </div>
+        </li>
+        <li >
+
+          <a   class="btn btn-neutral btn-icon">
+            
+                        <button href="./shared/signup">Se connecter</button>
+          </a>
+        </li> -->
+        <li class="nav-item d-none d-lg-block ml-lg-4">
+          <a href="./shared/login"  class="btn btn-info btn-icon mb-3 mb-sm-0">
+            <span [routerLink]="['./shared/login']" class="btn-inner--text">Se connecter</span>
+          </a>
         </li>
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          
-          
-
-          <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank" class="btn btn-neutral btn-icon">
-            <span class="btn-inner--icon">
-              <i class="fa fa-cloud-download mr-2"></i>
-            </span>
-            
-            <span class="nav-link-inner--text">LOGIN</span>
+          <a href="./shared/login" class="btn btn-info btn-icon mb-3 mb-sm-0">
+            <span [routerLink]="['./shared/login']" class="btn-inner--text">S'inscrire</span>
           </a>
         </li>
       </ul>
+       
+      
     </div>
   </div>
 </nav>
+   <!-- <span class="btn-inner--icon">
+              <i class="fa fa-cloud-download mr-2"></i>
+            </span> -->
+            
+            <!-- <span class="nav-link-inner--text">LOGIN</span> -->
