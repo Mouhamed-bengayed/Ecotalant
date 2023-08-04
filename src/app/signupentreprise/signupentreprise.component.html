@@ -56,6 +56,15 @@
                     <input class="form-control" placeholder="prenom" type="text" (focus)="focus=true" (blur)="focus=false">
                   </div>
                 </div>
+                <div class="form-group">
+                  <!-- [ngClass]="{'focused':focus===true}" -->
+                  <div class="input-group input-group-alternative mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="telephone" type="number" (focus)="focus=true" (blur)="focus=false">
+                  </div>
+                </div>
                 <div class="form-group" >
                   <!-- [ngClass]="{'focused':focus1===true}" -->
                   <div class="input-group input-group-alternative mb-3">
@@ -72,6 +81,15 @@
                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                     </div>
                     <input class="form-control" placeholder="Password" type="password" (focus)="focus2=true" (blur)="focus2=false">
+                  </div>
+                </div>
+                <div class="form-group" >
+                  <!-- [ngClass]="{'focused':focus2===true}" -->
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="confirme password" type="password" (focus)="focus2=true" (blur)="focus2=false">
                   </div>
                 </div>
                 <div class="text-muted font-italic">
